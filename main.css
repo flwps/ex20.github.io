@@ -1,0 +1,12 @@
+.box_ {
+
+    width: 100px;
+    height: 100px;
+    background: seagreen;
+    transition: 0.4s;
+
+}
+.box_:active {
+    width: 200px;
+    background: turquoise;
+}
