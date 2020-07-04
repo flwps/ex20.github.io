@@ -1,12 +1,47 @@
-.box_ {
+.box_1 {
 
-    width: 100px;
+    width: 200px;
     height: 100px;
     background: seagreen;
     transition: 0.4s;
 
 }
-.box_:active {
-    width: 200px;
+.box_1:active {
+    width: 300px;
     background: turquoise;
+}
+.box_2 {
+
+    width: 200px;
+    height: 100px;
+    background: blue;
+    transition: 0.4s;
+
+}
+.box_2:hover {
+    width: 300px;
+    background: turquoise;
+}
+
+input {
+    width: 100px;
+    outline: none; /*outline은 다루기가 조금 더 까다로움*/
+    border : 1px solid lightblue;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+input:focus {
+    border-color: rgb(250, 108, 108);
+    width: 150px;
+}
+ul>input{
+    width: 100px;
+    outline: none; /*outline은 다루기가 조금 더 까다로움*/
+    border : 1px solid lightblue;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+ul>input:focus {
+    border-color: rgb(20, 4, 4);
+    width: 150px;
 }
