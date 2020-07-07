@@ -45,3 +45,6 @@ ul>input:focus {
     border-color: rgb(20, 4, 4);
     width: 150px;
 }
+.fruits li:last-child {
+    color:red;
+}
