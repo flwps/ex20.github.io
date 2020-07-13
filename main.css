@@ -1,3 +1,15 @@
+body{background-color: rgb(80, 80, 80)}
+#title1{
+    margin-top: 80px;
+    margin-left: 800px;
+    margin-bottom: 30px;
+}
+#title2{
+    padding: 300px;
+}
+
+
+div{color:seashell}
 .box_1 {
 
     width: 200px;
@@ -45,6 +57,34 @@ ul>input:focus {
     border-color: rgb(20, 4, 4);
     width: 150px;
 }
-.fruits li:last-child {
+
+.fruits {
+    
     color:red;
 }
+#ID입력예제{
+    background-color: snow;
+    width: 400px;
+    height: 130px;
+    /* background랑 가로세로 너비를 같이 넣으면 밑에 센터가 적용이 안댐
+    background만 넣으면 상관없음 */
+    font-size: 200%;
+    text-align: center;
+    font-family: 바탕체;
+    color: rgb(0, 152, 212);
+}
+#boder{
+    text-align: center;
+    border-style: dashed;
+    width: 700px;
+    height: 100px;
+    border-color: darkseagreen;
+    /* 이미지에도 테두리로 적용 가능 */
+}
+/* font-family:글꼴명
+font-size:1.5em;
+font-style:italic;
+font-weight:bold; */
+/* 
+margin은 문단의 여백
+padding은 내용과 테두리간의 여백  */
