@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ex.css">
+    <script src="/ex.js"></script>
+</head>
+<body>
+  <header>
+
+    <div id="head_text">
+      <a href="">Seok Hoon Lee <br>Portfolio</a>
+    </div>
+    <nav class="nav">
+      <ul>
+          <li class="info" onclick="setMenu('info')">소개</li>
+          <li class="unv" onclick="setMenu('unv')">대학생활</li>
+          <li class="naver" onclick="setMenu('naver')">네이버 순위 및 뉴스</li>
+          <li class="instar" onclick="setMenu('instar')">인스타</li>
+      </ul>
+      </nav>
+  </header>
+
+    <main class="info">
+        
+        <div class="content">
+    
+          <section id="intro" class="dep _info">
+
+          </section>
+    
+          <section id="info" class="dep _info">
+            <article class="hidden">
+              <div class="photo"></div>
+              <div class="info_">
+                <div class="like"></div>
+                <div class="author"></div>
+                <div class="desc">
+                </div>
+              </div>
+            </article>
+          </section>
+    
+          <section id="info" class="dep _info _unv _naver _instar">
+            <aside>
+              <div class="dep _info _naver _instar option-title ">세부 사항 입니다</div>
+              <div class="dep _unv option-title">공과대학 학술제</div>
+              <!-- <div class="dep _naver option-title">설명창</div>
+              <div class="dep _instar option-title">설명창</div>
+              <div class="dep _what2 option-title">설명창</div> -->
+              <ul class="dep _unv">
+                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
+                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+                <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
+              </ul>
+              <ul class="dep _info">
+                <li>s</li>
+                <li>제스쳐를 활용/li>
+                <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
+              </ul>
+              <ul class="dep _naver">
+                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
+                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+                <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
+              </ul>
+              <ul class="dep _instar">
+                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
+                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+                <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
+              </ul>
+            </aside>
+          </section>
+    
+          <section id="naver" class="dep _naver">
+            <div class="non-edit">
+              <table>
+                <tr>
+                  <td>아이디</td>
+                  <td id="myInfoId"></td>
+                </tr>
+                <tr>
+                  <td>사용자명</td>
+                  <td id="myInfoUserName"></td>
+                </tr>
+                <tr>
+                  <td>소개</td>
+                  <td class="introduction">
+                    <input id="ip-intro" class="mi-dep edit" type="text" maxlength="30"/>
+                    <span id="sp-intro" class="mi-dep non-edit"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>취미/전문</td>
+                  <td>
+                    <input id="hobby" type="radio" name="as" value="hobby" disabled/>
+                    <label for="hobby">취미</label>
+                    <input id="pro" type="radio" name="as" value="pro" disabled/>
+                    <label for="pro">전문가</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>흥미</td>
+                  <td>
+                    <input class="cb-interest" id="nature" type="checkbox" value="nature" disabled/>
+                    <label for="nature">자연</label>
+                    <input class="cb-interest" id="human" type="checkbox" value="human" disabled/>
+                    <label for="human">사람</label>
+                    <input class="cb-interest" id="animal" type="checkbox" value="animal" disabled/>
+                    <label for="animal">동물</label>
+                    <input class="cb-interest" id="thing" type="checkbox" value="thing" disabled/>
+                    <label for="thing">사물</label>
+                  </td>
+                </tr>
+              </table>
+              <div class="mi-dep non-edit button" onclick="setEditMyInfo(true)">수정</div>
+              <div class="mi-dep edit button" onclick="updateMyInfo()">확인</div>
+              <div class="mi-dep edit button cancel" onclick="setEditMyInfo(false)">취소</div>
+            </div>
+          </section>
+    
+        </div>
+        <a class="write" onclick="setMenu('upload')">
+          <div></div>
+        </a>
+      </main>
+
+    <!-- <footer>
+        <ul>
+          <li><a href="#">취직 원해요</a></li>
+          <li><a href="#">인재입니다</a></li>
+          <li><a href="#">뽑아주시면</a></li>
+          <li><a href="#">열심히 일하겠습니다</a></li>
+          <li><a href="#">감사합니다</a></li>
+        </ul>
+      </footer> -->
+
+</body>
+</html>
