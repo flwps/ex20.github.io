@@ -7,4 +7,12 @@ function setMenu(_menu) {
     document.querySelector("nav li." + _menu).classList.add("on");
     document.querySelector("main").className = _menu;
 }
-  
+function setgong(gong) {
+    var filterButtons = document.querySelectorAll("nav li");
+    filterButtons.forEach(function (filterButton) {
+        filterButton.classList.remove("on");
+        }
+    );
+    document.querySelector("nav li." + _menu).classList.add("on");
+    document.querySelector("main").className = _menu;
+}
