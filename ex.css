@@ -5,7 +5,7 @@ html, div, body, h1{
 }
 ul,li,ol,li{list-style:none;}
 html{
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(39, 39, 39);
 }
 
 a:link {text-decoration: none; color: ghostwhite;}
@@ -17,7 +17,8 @@ main.info .dep._info,
 main.unv .dep._unv,
 main.naver .dep._naver,
 main.instar .dep._instar,
-main.what2 .dep._what2 {
+main.unv1 .dep._unv1, 
+main.unv2 .dep._unv2 {
   display: block;
 }
 /* @media screen and (min-width:885px){ */
@@ -59,11 +60,23 @@ main.what2 .dep._what2 {
         float: left;
         position: relative;
         left: 10vw;
-        top: 1.1vw;
+        top: 1vw;
         margin-right: 75px;
         font-size: 1.2vw;
         color: #fff;
         cursor: pointer;
+    }
+    header .nav li.on{
+      background-color: rgb(88, 88, 88);
+      padding: 1vw 3vw;
+      top: 0vw;
+      /* border-bottom: 2vw solid rgb(87, 87, 87);
+      height: 0vw;  
+      width: 10vw; */
+    }
+    header .nav li:hover{
+      color: rgb(4, 169, 252);
+      transition: 1s;
     }
     main {
         position: relative;
@@ -75,25 +88,24 @@ main.what2 .dep._what2 {
         top: 3vw;
         bottom: 0;
         left: 0;
-        width: 15vw;
+        width: 14vw;
         background-color: rgb(77, 77, 77);
         border-right:1px solid rgb(77, 77, 77);
       }
       main aside .option-title {
-        padding: 4vw 0 0 3vw;
-        font-size: 1.2vw;
+        padding: 4vw 2vw 0 3vw;
+        font-size: 1vw;
         font-weight: 700;
          color: rgb(255, 255, 255);
       }
       main aside ul {
-        font-size: 1.1vw;
-        margin: 37px 0px 0px -42px;
+        font-size: 1vw;
+        margin: 37px 0vw 0px -42px;
         line-height: 1.5em;
         color: white;
       }
       main aside ul li {
-        padding: 45px 37px;
-        cursor: pointer;
+        padding: 30px 12px;
       }
       main aside ul li.on {
         background-color: rgb(77, 77, 77);
@@ -101,16 +113,43 @@ main.what2 .dep._what2 {
         border-bottom: 1px solid #ccc;
         color: rgb(77, 77, 77);
       }
-      main aside ul li:hover {
+      main aside ul._unv li:hover {
         color: white;
-        background-color: #444;
+        background-color: rgb(54, 54, 54);
         transition: 1s;
       }
       main .content {
         min-height: 50vw;
         background-color: #fafafa;
       }
+     
+      #unv2, #unv1, #info{
+        position: absolute;
+        top: 10vw;
+        bottom: 10vw;
+        left: 20vw;
+        font-size: 1vw;
+      }
+      .unv_2PT_1{
+        background-image: url(/제목\ 없음.png);
+        width: 70vw;
+        height: 20vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
 
+      footer {
+        position: absolute;
+        right: 24vw;
+        width: 30vw;
+        background-color:rgb(39, 39, 39);
+        padding:2vw 0vw;
+        font-size:1.2vw;
+        z-index: 3;
+      }
+      footer ul{
+        color: ivory;
+      }
 
 
 /* } */
@@ -153,12 +192,13 @@ main.what2 .dep._what2 {
         height: 100px;
     } */
     
-} */
-main .dep { display: none; }
+/* } */ 
+/* main .dep { display: none; }
 main.gallery .dep._info,
 main.gallery .dep._unv,
 main.upload .dep._naver,
 main.myinfo .dep._instar
-main.myinfo .dep._what2 {
+main.myinfo .dep._what2 
+maim.{
   display: block;
-}
+} */
