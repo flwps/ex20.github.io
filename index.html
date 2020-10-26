@@ -16,9 +16,9 @@
     <nav class="nav">
       <ul>
           <li class="info" onclick="setMenu('info')">소개</li>
-          <li class="unv" onclick="setMenu('unv')">대학생활</li>
-          <li class="naver" onclick="setMenu('naver')">네이버 순위 및 뉴스</li>
-          <li class="instar" onclick="setMenu('instar')">인스타</li>
+          <li class="unv1" onclick="setMenu('unv1')">모션컨트롤러</li>
+          <li class="unv2" onclick="setMenu('unv2')">스마트 지팡이</li>
+          <!-- <li class="instar" onclick="setMenu('instar')">인스타</li> -->
       </ul>
       </nav>
   </header>
@@ -32,109 +32,124 @@
           </section>
     
           <section id="info" class="dep _info">
-            <article class="hidden">
-              <div class="photo"></div>
-              <div class="info_">
-                <div class="like"></div>
-                <div class="author"></div>
-                <div class="desc">
-                </div>
+           
+             <div>
+               
               </div>
-            </article>
           </section>
     
-          <section id="info" class="dep _info _unv _naver _instar">
+          <section id="info" class="dep _info _unv1 _unv2 _instar">
             <aside>
-              <div class="dep _info _naver _instar option-title ">세부 사항 입니다</div>
-              <div class="dep _unv option-title">공과대학 학술제</div>
+              <div class="dep _info _unv2 _unv1 _instar option-title ">세부 사항 입니다</div>
+              
               <!-- <div class="dep _naver option-title">설명창</div>
               <div class="dep _instar option-title">설명창</div>
               <div class="dep _what2 option-title">설명창</div> -->
-              <ul class="dep _unv">
-                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
-                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+              
                 <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
-              </ul>
+              
               <ul class="dep _info">
-                <li>s</li>
-                <li>제스쳐를 활용/li>
+               <li>HTML의 onclick기능과 자바스크립트 함수와 CSS를 이용해 
+                각 메뉴를 클릭했을 때 display none에서 block으로 바뀌는 방식으로 
+                페이지를 작성하였습니다.</li>
+                <li>
+                  css를 이용해 헤더와 메뉴길이 등 모든 항목의 단위를 vw로 지정함으로써 
+                  가로길이 기준 최소 700px 까지 반응형으로 제작하였습니다.
+                </li>
                 <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
               </ul>
-              <ul class="dep _naver">
-                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
-                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+              <ul class="dep _unv1">
+                <li>네이버 블로그에 동영상을 올린 뒤 HTML 주소를 복사하여 페이지에 추가하였습니다.</li>
+                
                 <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
               </ul>
-              <ul class="dep _instar">
-                <li class="unv_1 " onclick="setMenu('unv_1')">시각장애인을 위한 스마트 지팡이</li>
-                <li class="unv_2" onclick="setMenu('unv_2')">제스쳐를 활용한 모션컨트롤러</li>
+              <ul class="dep _unv2">
+                <li>각각의 이미지를 여러개 불러오면 시간이 지체될 수 있어 한개의 이미지로 합치는 방식을 사용하였습니다.</li>
+              
                 <!-- 그림 누르면 각각 지팡이랑 커트롤러 나와서 소개하는 애니메이션 방식 -->
               </ul>
+              <!-- <ul class="dep _instar">
+                <li>시각장애인을 위한 스마트 지팡이</li>
+                <li>제스쳐를 활용한 모션컨트롤러</li>
+              
+              </ul> -->
             </aside>
           </section>
     
-          <section id="naver" class="dep _naver">
-            <div class="non-edit">
-              <table>
-                <tr>
-                  <td>아이디</td>
-                  <td id="myInfoId"></td>
-                </tr>
-                <tr>
-                  <td>사용자명</td>
-                  <td id="myInfoUserName"></td>
-                </tr>
-                <tr>
-                  <td>소개</td>
-                  <td class="introduction">
-                    <input id="ip-intro" class="mi-dep edit" type="text" maxlength="30"/>
-                    <span id="sp-intro" class="mi-dep non-edit"></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>취미/전문</td>
-                  <td>
-                    <input id="hobby" type="radio" name="as" value="hobby" disabled/>
-                    <label for="hobby">취미</label>
-                    <input id="pro" type="radio" name="as" value="pro" disabled/>
-                    <label for="pro">전문가</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>흥미</td>
-                  <td>
-                    <input class="cb-interest" id="nature" type="checkbox" value="nature" disabled/>
-                    <label for="nature">자연</label>
-                    <input class="cb-interest" id="human" type="checkbox" value="human" disabled/>
-                    <label for="human">사람</label>
-                    <input class="cb-interest" id="animal" type="checkbox" value="animal" disabled/>
-                    <label for="animal">동물</label>
-                    <input class="cb-interest" id="thing" type="checkbox" value="thing" disabled/>
-                    <label for="thing">사물</label>
-                  </td>
-                </tr>
-              </table>
-              <div class="mi-dep non-edit button" onclick="setEditMyInfo(true)">수정</div>
-              <div class="mi-dep edit button" onclick="updateMyInfo()">확인</div>
-              <div class="mi-dep edit button cancel" onclick="setEditMyInfo(false)">취소</div>
-            </div>
+          <section id="info" class="dep _info">
+            <span class="image main"><img src="명함사진.png" alt="" /></span>
+							<p><img id="seokhoon" src="교육과정.png" alt=""></p>
+
+
+            
           </section>
-    
-        </div>
-        <a class="write" onclick="setMenu('upload')">
-          <div></div>
-        </a>
+
+          <section id="unv1" class="dep _unv1">
+            <td><iframe width="800" height="460" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=727CC41EB36808D4285E757BD6F9E80411AA&outKey=V129c71277380cec5381df85f5da177373136afb7a6e024062196f85f5da177373136" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe></td>
+ 
+            <p>스마트 지팡이와 마찬가지로 공과대학 학술제에 전시하기 위해 진행한 프로젝트로 2020년에 제작한 작품 입니다. <br>
+              제스쳐 컨트롤러를 이용해 구동체를 조종하며 버튼식이 아닌 손의 움직임을 이용해 조종하는것이 특징 입니다. <br> 
+              작품은 아두이노 기반의 제스쳐 센서와 블루투스 모듈을 이용해서 컨트롤러를 제작하였으며, 구동체는 <br>
+                모터를 이용해 바퀴를 움직이고 서보모터를 이용해 방향을 제어합니다. <br>
+              블루투스와 모터 구동시에는 5V, 제스쳐 센서의 경우에는 3.3V의 전압이 안정적으로 전달되어야 하기 때문에 <br>
+                레귤레이터를 이용하여 전압 강하에 대비하였습니다. <br>
+              </p>
+              <p>인식할 수 있는 제스쳐는 UP, DOWN, LEFT, RIGHT, FAR, NEAR 이렇게 6가지가 있습니다. <br>
+								UP과 DOWN은 각각 전진과 후진을 구현하였으며 FAR와 NEAR는 멈추는 기능을 구현하였습니다. <br>
+								처음 계획때는 건전지를 이용하고, 건전지의 잔량을 확인하기 위해 배터리잔량 표시기를 추가 할 계획이었으나 <br>
+								건전지의 전류량이 적어 모터가 구동하지 않는 문제가 발생하여 보조배터리를 사용하는 방식으로 교체하였습니다. <br>
+							    </p>
+							<p> 학교에서의 채점은 아직이지만 한국정보기술학회 대학생 논문 경진대회에서 우수논문으로 선정되어 동상을 받을 수 있었습니다. </p>
+          </section>
+          <section id="unv2" class="dep _unv2">
+            <ul>
+              <li> 2019년 공과대학에서 진행하는 학술제에 작품을 전시하기 위해 </li>
+              <li> 시각장애인을 위한 스마트지팡이를 조원들과 함께 제작하였습니다. </li>
+              <div class="unv_2PT_1"></div>
+              <li> 초음파센서를 통해 근처의 물체를 감지하고, 색상인식 센서를 통해 바닥의 노란 안내선을 감지합니다. </li>
+              <li> 감지된 결과를 각각 다른 패턴으로 진동모터의 진동을 통해 사용자에게 알려줍니다. </li>
+              <li> 적외선 센서를 통해 조도값이 낮아지면 지팡에의 LED가 자동으로 켜져 밤에 사용자의 위치를 나타냅니다. </li>
+              <li> 해당 지팡이의 H/W제작과 S/W제작에 모두 관여하였으며 작품을 통해 학술제에서 우수상에 입상할 수 있었습니다. </li>
+              <li> 해당 작품은 외관부분에서는 투박하기 짝이 없지만 개발을 통한 첫번째 작품이었던 만큼 애착이 남았습니다. </li>
+            </ul>
+
+          </section>
+          <!-- <section id="unv_2_" class="dep unv_2">
+            <li> 공과대학 학술제에서는 무얼 하였는가 </li>
+
+          </section> -->
+        
       </main>
 
-    <!-- <footer>
+    <footer>
         <ul>
-          <li><a href="#">취직 원해요</a></li>
-          <li><a href="#">인재입니다</a></li>
-          <li><a href="#">뽑아주시면</a></li>
-          <li><a href="#">열심히 일하겠습니다</a></li>
-          <li><a href="#">감사합니다</a></li>
-        </ul>
-      </footer> -->
+          <li>Mail : <a id="mail_" href="mailto:yiseokhoon@naver.com">yiseokhoon@naver.com</a></li>
 
+        </ul>
+      </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCybl1jsI0ErIBX-Fz29LTXBCbLSEGG7ZU",
+    authDomain: "porpol.firebaseapp.com",
+    databaseURL: "https://porpol.firebaseio.com",
+    projectId: "porpol",
+    storageBucket: "porpol.appspot.com",
+    messagingSenderId: "776680224575",
+    appId: "1:776680224575:web:af79c19ec0f1dd0689c58a",
+    measurementId: "G-4J3NNZBKS8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
